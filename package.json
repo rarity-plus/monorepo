@@ -1,0 +1,32 @@
+{
+  "name": "monorepo",
+  "scripts": {
+    "dev": "pnpm turbo run dev",
+    "build": "pnpm turbo run build"
+  },
+  "turbo": {
+    "baseBranch": "origin/main",
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "test": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": []
+      },
+      "lint": {
+        "outputs": []
+      },
+      "dev": {
+        "cache": false
+      }
+    }
+  },
+  "devDependencies": {
+    "turbo": "^1.0.28"
+  }
+}
