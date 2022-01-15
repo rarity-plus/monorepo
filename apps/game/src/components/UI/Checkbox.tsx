@@ -7,12 +7,16 @@ interface CheckboxProps {
   label: string;
   selected?: boolean;
   onChange?: Dispatch<SetStateAction<boolean>>;
+  boxClassName?: string;
+  className?: string;
 }
 
 const Checkbox: FunctionComponent<CheckboxProps> = ({
   label,
   selected,
   onChange,
+  className,
+  boxClassName,
 }) => {
   const [useCheckboxState, setCheckboxState] = useState(selected || false);
 
@@ -27,8 +31,16 @@ const Checkbox: FunctionComponent<CheckboxProps> = ({
   const labelComputed = useMemo(() => label, [label]);
 
   return (
-    <div className="inline-flex gap-1 items-center pointer-events-nones select-none">
-      <span onClick={onClicked} className="cursor-pointer">
+    <div
+      className={`${
+        className ||
+        "inline-flex gap-1 items-center pointer-events-nones select-none"
+      }`}
+    >
+      <span
+        onClick={onClicked}
+        className={`${boxClassName || "cursor-pointer "}`}
+      >
         [ {useCheckboxState ? "X" : <>&nbsp;</>} ]
       </span>
       {labelComputed}
