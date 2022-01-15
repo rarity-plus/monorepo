@@ -31,6 +31,7 @@ importers:
       react-router-dom: '6'
       react-scripts: 5.0.0
       tailwindcss: ^3.0.15
+      typed.js: ^2.0.12
       typescript: ^4.5.4
       web-vitals: ^2.1.3
     dependencies:
@@ -51,6 +52,7 @@ importers:
       react-dom: 17.0.2_react@17.0.2
       react-router-dom: 6.2.1_react-dom@17.0.2+react@17.0.2
       react-scripts: 5.0.0_758e076c06e122784af8a16149099085
+      typed.js: 2.0.12
       typescript: 4.5.4
       web-vitals: 2.1.3
     devDependencies:
@@ -9157,6 +9159,10 @@ packages:
     dependencies:
       media-typer: 0.3.0
       mime-types: 2.1.34
+    dev: false
+
+  /typed.js/2.0.12:
+    resolution: {integrity: sha512-lyACZh1cu+vpfYY3DG/bvsGLXXbdoDDpWxmqta10IQUdMXisMXOEyl+jos+YT9uBbzK4QaKYBjT3R0kTJO0Slw==}
     dev: false
 
   /typedarray-to-buffer/3.1.5:
