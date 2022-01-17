@@ -7,7 +7,9 @@
       "@hooks": ["./hooks"],
       "@hooks/*": ["./hooks/*"],
       "@helpers": ["./helpers"],
-      "@helpers/*": ["./helpers/*"]
+      "@helpers/*": ["./helpers/*"],
+      "@gameSrc": ["./gameSrc"],
+      "@gameSrc/*": ["./gameSrc/*"]
     }
   }
 }

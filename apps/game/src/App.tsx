@@ -18,6 +18,7 @@ function App() {
     <div>
       {" "}
       <Checkbox label={nLabel} selected={true} onChange={setTestState} />
+      <Checkbox label={nLabel} selected={true} onChange={setTestState} />
       <Typer text={["Hello World"]} className=" font-bold text-red-700" />
     </div>
   );
